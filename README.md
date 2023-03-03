@@ -2,11 +2,11 @@
 <p align="center"><img src="repo_banner.png"></p>
 
 ## Resources
-For this lab, you will be using some of the Mongoose commands that you learned today and you will be **reading the documents** to find **new** queries to complete the following activities. Researching queries and implementing them is a big part of this lab!
+For this lab, you will be using some of the Mongoose commands that you learned today and you will be **reading the documentation** to find **new** queries to complete the following activities. Researching queries and implementing them is a big part of this lab!
 
 Utilize the following resources to research the commands you will need:
 - Your notes from today
-- Mongoose Documentation
+- [Mongoose Documentation](https://mongoosejs.com/docs/index.html)
 - Google to find Stack Overflow articles and more
 
 ## Setup
