@@ -12,7 +12,7 @@ Utilize the following resources to research the commands you will need:
 ## Setup
 1. Fork and clone this repo
 1. Navigate to this directory in terminal and run `npm i` to install all of the dependencies in `package.json`
-1. Open the project in VS Code, you'll be working with some starter code in the `models` folder and the `app.js` file
+1. Open the project in VS Code, you'll be working with some starter code in the `models` folder and the `server.js` file
 1. Edit the MONGODBURI connection string so that it points to a database called `vampires` in your MongoDB Atlas cluster.
 
 
