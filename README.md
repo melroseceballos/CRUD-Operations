@@ -13,7 +13,7 @@ Utilize the following resources to research the commands you will need:
 1. Fork and clone this repo
 1. Navigate to this directory in terminal and run `npm i` to install all of the dependencies in `package.json`
 1. Open the project in VS Code, you'll be working with some starter code in the `models` folder and the `server.js` file
-1. Edit the MONGODBURI connection string so that it points to a database called `vampires` in your MongoDB Atlas cluster.
+1. Edit the MONGODBURI connection string (inside the `.env`file) so that it points to a database called `vampires` in your MongoDB Atlas cluster.
 
 
 ## Your Task
@@ -26,8 +26,8 @@ Our vampire collection will look something like this:
 const vampire = {
   name: 'Chocula',
   title: 'Count'
-  hair_color: 'brown',
-  eye_color: 'brown',
+  hairColor: 'brown',
+  eyeColor: 'brown',
   dob: new Date(1971, 2, 13, 7, 47),
   loves: ['cereal','marshmallows'],
   location: 'Minneapolis, Minnesota, US',
