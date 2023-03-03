@@ -25,7 +25,7 @@ Our vampire collection will look something like this:
 ``` javascript
 const vampire = {
   name: 'Chocula',
-  title: 'Count'
+  title: 'Count,'
   hairColor: 'brown',
   eyeColor: 'brown',
   dob: new Date(1971, 2, 13, 7, 47),
