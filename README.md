@@ -1,5 +1,5 @@
 # Mongoose Vampires
-<p align="center"><img src="https://s-media-cache-ak0.pinimg.com/564x/ee/b7/a9/eeb7a99383582d53e65ffcc0e4a225bd.jpg" width="100%"></p>
+<p align="center"><img src="repo_banner.png"></p>
 
 ## Resources
 For this lab, you will be using some of the Mongoose commands that you learned today and you will be **reading the documents** to find **new** queries to complete the following activities. Researching queries and implementing them is a big part of this lab!
