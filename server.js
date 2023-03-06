@@ -119,7 +119,20 @@ db.Vampire.find({loves: {$ne: ["fancy cloaks", "frilly shirtsleeves", "appearing
 db.Vampire.find({victimes: {$lt: 200}})
 // REPLACE
 // 1
-db.Vampire.udpateMany({name: "Claudia"}, {$set:{name: "eve", portrayed_by: "Tilda Swinton"}}),
+db.Vampire.updateOne({name: "Claudia"}, {$set:{name: "eve", portrayed_by: "Tilda Swinton"}}),
 // 2
-db.Vampire.updateMany({}, {$set:{name: "Guy Man", is_actually: "were-lizard"}})
-// 
+db.Vampire.updateOne({}, {$set:{name: "Guy Man", is_actually: "were-lizard"}})
+// UPDATE
+// 1
+db.Vampire.updateOne({name: "Guy Man"}, {$set: {gender: "f"}})
+// 2
+db.Vampire.updateOne({name: "Eve"}, {$set: {gender: "m"}})
+// 3
+db.Vampire.updateOne({name: "Guy Man"}, {$set: {hates: ['clothes','jobs']}})
+//4
+db.Vampire.updateOne({name: "Guy Man"}), {$push: {hates: ['alarm clocks','jackalopes']}}
+// 5
+db.Vampire.updateOne({name: "Eve"}),{$set: {name: "Moniker"}}
+// 6
+db.Vampire.updateMany({gender: 'f'}, {$set:{gender: "fems"}})
+// REMOVE
