@@ -2,18 +2,34 @@
 const mongoose = require('mongoose');
 
 const vampireSchema = new mongoose.Schema({
-  // requiring name
-    name: {type:String, required: true},
-    title: String,
-    // Setting default hair color
-    hairColor: {type: String, default: "blonde"},
-    eyeColor: String,
-    dob: Date,
-    loves: Array,
-    location: String,
-    gender: String,
-    // Setting minimum victim count to 1
-    victims: {type: Number, min: 1}
+  // add your code here to set up your schema
+  name: { 
+    type: String 
+  },
+  title: { 
+    type: String 
+  },
+  hairColor: { 
+    type: String 
+  },
+  eyeColor: { 
+    type: String 
+  },
+  dob: { 
+    type: Date 
+  },
+  loves: { 
+    type: Array 
+  },
+  location: { 
+    type: Array 
+  },
+  gender: { 
+    type: String 
+  },
+  victims: { 
+    type: Number 
+  },
 });
 
 // Export your schema as a Monogoose model so that it can be accessed in `models/index.js`

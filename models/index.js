@@ -1,6 +1,6 @@
 // Require the Mongoose package & your environment configuration
-const mongoose = require('mongoose');
 require('dotenv').config()
+const mongoose = require('mongoose');
 const mongodbUri = process.env.MONGODBURI;
 
 (async function () {
