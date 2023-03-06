@@ -108,3 +108,13 @@ db.Vampire.find({loves: "brooding"})
 db.Vampire.find({loves: {in: ["appearing innoncent","trickery", "lurking in rotting mansions","R&B music"]}})
 // 4
 db.Vampire.find({loves: "fancy cloaks", $and: [{loves: {$ne,$in: "top hats" , "virgin blood"}}]})
+// NEGATIVE SELECTION
+// 1
+db.Vampire.find({loves: "ribbons", $and: [{eyeColor: {$ne: "brown"}}]})
+// 2
+db.Vampire.find({from: {$ne: "Rome"} })
+// 3
+db.Vampire.find({loves: {$ne: ["fancy cloaks", "frilly shirtsleeves", "appearing innocent","being tragic","brooding"]} })
+// 4
+db.Vampire.find({victimes: {$ne: 200}})
+// REPLACE
