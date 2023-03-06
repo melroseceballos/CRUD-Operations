@@ -116,5 +116,10 @@ db.Vampire.find({from: {$ne: "Rome"} })
 // 3
 db.Vampire.find({loves: {$ne: ["fancy cloaks", "frilly shirtsleeves", "appearing innocent","being tragic","brooding"]} })
 // 4
-db.Vampire.find({victimes: {$ne: 200}})
+db.Vampire.find({victimes: {$lt: 200}})
 // REPLACE
+// 1
+db.Vampire.udpateMany({name: "Claudia"}, {$set:{name: "eve", portrayed_by: "Tilda Swinton"}}),
+// 2
+db.Vampire.updateMany({}, {$set:{name: "Guy Man", is_actually: "were-lizard"}})
+// 
