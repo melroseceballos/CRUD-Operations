@@ -136,3 +136,7 @@ db.Vampire.updateOne({name: "Eve"}),{$set: {name: "Moniker"}}
 // 6
 db.Vampire.updateMany({gender: 'f'}, {$set:{gender: "fems"}})
 // REMOVE
+// 1
+db.Vampire.deleteOne({hairColor: "brown"})
+// 2
+db.Vampire.deleteMany({eyes: "blue"})
